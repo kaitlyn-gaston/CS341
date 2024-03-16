@@ -1,0 +1,750 @@
+Project 1 for CS 341
+Section number: 010
+Semester: Spring 2024
+Written by: Kaitlyn Gaston, kg33
+Instructor: Marvin Nakayama, marvin@njit.edu
+
+Enter an integer >= 0 specifying the number of strings to be processed: 
+n = 20
+
+Enter string 1 of 20: 
+njit@njit.gov
+State: q1
+Character: n
+State: q2
+Character: j
+State: q2
+Character: i
+State: q2
+Character: t
+State: q2
+Character: @
+State: q3
+Character: n
+State: q4
+Character: j
+State: q4
+Character: i
+State: q4
+Character: t
+State: q4
+Character: .
+State: q5
+Character: g
+State: q6
+Character: o
+State: q7
+Character: v
+State: q8
+Valid email: njit@njit.gov
+
+Enter string 2 of 20: 
+b@d.gov
+State: q1
+Character: b
+State: q2
+Character: @
+State: q3
+Character: d
+State: q4
+Character: .
+State: q5
+Character: g
+State: q6
+Character: o
+State: q7
+Character: v
+State: q8
+Valid email: b@d.gov
+
+Enter string 3 of 20: 
+tuv@wxyz.gr
+State: q1
+Character: t
+State: q2
+Character: u
+State: q2
+Character: v
+State: q2
+Character: @
+State: q3
+Character: w
+State: q4
+Character: x
+State: q4
+Character: y
+State: q4
+Character: z
+State: q4
+Character: .
+State: q5
+Character: g
+State: q6
+Character: r
+State: q8
+Valid email: tuv@wxyz.gr
+
+Enter string 4 of 20: 
+opqr@.gov
+State: q1
+Character: o
+State: q2
+Character: p
+State: q2
+Character: q
+State: q2
+Character: r
+State: q2
+Character: @
+State: q3
+Character: .
+State: q9
+Character: g
+State: q9
+Character: o
+State: q9
+Character: v
+State: q9
+Invalid email: opqr@.gov
+
+Enter string 5 of 20: 
+web.rstuv.b.gov.cdef@z.gr.go.stanford.gov
+State: q1
+Character: w
+State: q2
+Character: e
+State: q2
+Character: b
+State: q2
+Character: .
+State: q1
+Character: r
+State: q2
+Character: s
+State: q2
+Character: t
+State: q2
+Character: u
+State: q2
+Character: v
+State: q2
+Character: .
+State: q1
+Character: b
+State: q2
+Character: .
+State: q1
+Character: g
+State: q2
+Character: o
+State: q2
+Character: v
+State: q2
+Character: .
+State: q1
+Character: c
+State: q2
+Character: d
+State: q2
+Character: e
+State: q2
+Character: f
+State: q2
+Character: @
+State: q3
+Character: z
+State: q4
+Character: .
+State: q5
+Character: g
+State: q6
+Character: r
+State: q8
+Character: .
+State: q5
+Character: g
+State: q6
+Character: o
+State: q7
+Character: .
+State: q5
+Character: s
+State: q4
+Character: t
+State: q4
+Character: a
+State: q4
+Character: n
+State: q4
+Character: f
+State: q4
+Character: o
+State: q4
+Character: r
+State: q4
+Character: d
+State: q4
+Character: .
+State: q5
+Character: g
+State: q6
+Character: o
+State: q7
+Character: v
+State: q8
+Valid email: web.rstuv.b.gov.cdef@z.gr.go.stanford.gov
+
+Enter string 6 of 20: 
+gg@ggg.gov..gov
+State: q1
+Character: g
+State: q2
+Character: g
+State: q2
+Character: @
+State: q3
+Character: g
+State: q4
+Character: g
+State: q4
+Character: g
+State: q4
+Character: .
+State: q5
+Character: g
+State: q6
+Character: o
+State: q7
+Character: v
+State: q8
+Character: .
+State: q5
+Character: .
+State: q9
+Character: g
+State: q9
+Character: o
+State: q9
+Character: v
+State: q9
+Invalid email: gg@ggg.gov..gov
+
+Enter string 7 of 20: 
+zyxw.@phone.gov
+State: q1
+Character: z
+State: q2
+Character: y
+State: q2
+Character: x
+State: q2
+Character: w
+State: q2
+Character: .
+State: q1
+Character: @
+State: q9
+Character: p
+State: q9
+Character: h
+State: q9
+Character: o
+State: q9
+Character: n
+State: q9
+Character: e
+State: q9
+Character: .
+State: q9
+Character: g
+State: q9
+Character: o
+State: q9
+Character: v
+State: q9
+Invalid email: zyxw.@phone.gov
+
+Enter string 8 of 20: 
+gov@govern.gov.
+State: q1
+Character: g
+State: q2
+Character: o
+State: q2
+Character: v
+State: q2
+Character: @
+State: q3
+Character: g
+State: q4
+Character: o
+State: q4
+Character: v
+State: q4
+Character: e
+State: q4
+Character: r
+State: q4
+Character: n
+State: q4
+Character: .
+State: q5
+Character: g
+State: q6
+Character: o
+State: q7
+Character: v
+State: q8
+Character: .
+State: q5
+Invalid email: gov@govern.gov.
+
+Enter string 9 of 20: 
+yellow@abc.gov.green
+State: q1
+Character: y
+State: q2
+Character: e
+State: q2
+Character: l
+State: q2
+Character: l
+State: q2
+Character: o
+State: q2
+Character: w
+State: q2
+Character: @
+State: q3
+Character: a
+State: q4
+Character: b
+State: q4
+Character: c
+State: q4
+Character: .
+State: q5
+Character: g
+State: q6
+Character: o
+State: q7
+Character: v
+State: q8
+Character: .
+State: q5
+Character: g
+State: q6
+Character: r
+State: q8
+Character: e
+State: q4
+Character: e
+State: q4
+Character: n
+State: q4
+Invalid email: yellow@abc.gov.green
+
+Enter string 10 of 20: 
+random@gov
+State: q1
+Character: r
+State: q2
+Character: a
+State: q2
+Character: n
+State: q2
+Character: d
+State: q2
+Character: o
+State: q2
+Character: m
+State: q2
+Character: @
+State: q3
+Character: g
+State: q4
+Character: o
+State: q4
+Character: v
+State: q4
+Invalid email: random@gov
+
+Enter string 11 of 20: 
+rewq@g.gov.gr.gor
+State: q1
+Character: r
+State: q2
+Character: e
+State: q2
+Character: w
+State: q2
+Character: q
+State: q2
+Character: @
+State: q3
+Character: g
+State: q4
+Character: .
+State: q5
+Character: g
+State: q6
+Character: o
+State: q7
+Character: v
+State: q8
+Character: .
+State: q5
+Character: g
+State: q6
+Character: r
+State: q8
+Character: .
+State: q5
+Character: g
+State: q6
+Character: o
+State: q7
+Character: r
+State: q4
+Invalid email: rewq@g.gov.gr.gor
+
+Enter string 12 of 20: 
+www@gov.govr
+State: q1
+Character: w
+State: q2
+Character: w
+State: q2
+Character: w
+State: q2
+Character: @
+State: q3
+Character: g
+State: q4
+Character: o
+State: q4
+Character: v
+State: q4
+Character: .
+State: q5
+Character: g
+State: q6
+Character: o
+State: q7
+Character: v
+State: q8
+Character: r
+State: q4
+Invalid email: www@gov.govr
+
+Enter string 13 of 20: 
+wwwc@gov.gr
+State: q1
+Character: w
+State: q2
+Character: w
+State: q2
+Character: w
+State: q2
+Character: c
+State: q2
+Character: @
+State: q3
+Character: g
+State: q4
+Character: o
+State: q4
+Character: v
+State: q4
+Character: .
+State: q5
+Character: g
+State: q6
+Character: r
+State: q8
+Valid email: wwwc@gov.gr
+
+Enter string 14 of 20: 
+.five@six.gov
+State: q1
+Character: .
+State: q9
+Character: f
+State: q9
+Character: i
+State: q9
+Character: v
+State: q9
+Character: e
+State: q9
+Character: @
+State: q9
+Character: s
+State: q9
+Character: i
+State: q9
+Character: x
+State: q9
+Character: .
+State: q9
+Character: g
+State: q9
+Character: o
+State: q9
+Character: v
+State: q9
+Invalid email: .five@six.gov
+
+Enter string 15 of 20: 
+governess@go.gov@
+State: q1
+Character: g
+State: q2
+Character: o
+State: q2
+Character: v
+State: q2
+Character: e
+State: q2
+Character: r
+State: q2
+Character: n
+State: q2
+Character: e
+State: q2
+Character: s
+State: q2
+Character: s
+State: q2
+Character: @
+State: q3
+Character: g
+State: q4
+Character: o
+State: q4
+Character: .
+State: q5
+Character: g
+State: q6
+Character: o
+State: q7
+Character: v
+State: q8
+Character: @
+State: q9
+Invalid email: governess@go.gov@
+
+Enter string 16 of 20: 
+govern@government.gr.govt
+State: q1
+Character: g
+State: q2
+Character: o
+State: q2
+Character: v
+State: q2
+Character: e
+State: q2
+Character: r
+State: q2
+Character: n
+State: q2
+Character: @
+State: q3
+Character: g
+State: q4
+Character: o
+State: q4
+Character: v
+State: q4
+Character: e
+State: q4
+Character: r
+State: q4
+Character: n
+State: q4
+Character: m
+State: q4
+Character: e
+State: q4
+Character: n
+State: q4
+Character: t
+State: q4
+Character: .
+State: q5
+Character: g
+State: q6
+Character: r
+State: q8
+Character: .
+State: q5
+Character: g
+State: q6
+Character: o
+State: q7
+Character: v
+State: q8
+Character: t
+State: q4
+Invalid email: govern@government.gr.govt
+
+Enter string 17 of 20: 
+govern@government.gov.gr
+State: q1
+Character: g
+State: q2
+Character: o
+State: q2
+Character: v
+State: q2
+Character: e
+State: q2
+Character: r
+State: q2
+Character: n
+State: q2
+Character: @
+State: q3
+Character: g
+State: q4
+Character: o
+State: q4
+Character: v
+State: q4
+Character: e
+State: q4
+Character: r
+State: q4
+Character: n
+State: q4
+Character: m
+State: q4
+Character: e
+State: q4
+Character: n
+State: q4
+Character: t
+State: q4
+Character: .
+State: q5
+Character: g
+State: q6
+Character: o
+State: q7
+Character: v
+State: q8
+Character: .
+State: q5
+Character: g
+State: q6
+Character: r
+State: q8
+Valid email: govern@government.gov.gr
+
+Enter string 18 of 20: 
+@mnop.gov
+State: q1
+Character: @
+State: q9
+Character: m
+State: q9
+Character: n
+State: q9
+Character: o
+State: q9
+Character: p
+State: q9
+Character: .
+State: q9
+Character: g
+State: q9
+Character: o
+State: q9
+Character: v
+State: q9
+Invalid email: @mnop.gov
+
+Enter string 19 of 20: 
+xyzz.bcde.grow@.gov
+State: q1
+Character: x
+State: q2
+Character: y
+State: q2
+Character: z
+State: q2
+Character: z
+State: q2
+Character: .
+State: q1
+Character: b
+State: q2
+Character: c
+State: q2
+Character: d
+State: q2
+Character: e
+State: q2
+Character: .
+State: q1
+Character: g
+State: q2
+Character: r
+State: q2
+Character: o
+State: q2
+Character: w
+State: q2
+Character: @
+State: q3
+Character: .
+State: q9
+Character: g
+State: q9
+Character: o
+State: q9
+Character: v
+State: q9
+Invalid email: xyzz.bcde.grow@.gov
+
+Enter string 20 of 20: 
+abcd..efg@fort.gov
+State: q1
+Character: a
+State: q2
+Character: b
+State: q2
+Character: c
+State: q2
+Character: d
+State: q2
+Character: .
+State: q1
+Character: .
+State: q9
+Character: e
+State: q9
+Character: f
+State: q9
+Character: g
+State: q9
+Character: @
+State: q9
+Character: f
+State: q9
+Character: o
+State: q9
+Character: r
+State: q9
+Character: t
+State: q9
+Character: .
+State: q9
+Character: g
+State: q9
+Character: o
+State: q9
+Character: v
+State: q9
+Invalid email: abcd..efg@fort.gov
